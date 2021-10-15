@@ -31,11 +31,13 @@ const checkCards = (id) => {
 // check one card
 const checkCard = (card) => {
     card.classList.remove('c0','c1','c2','c3','c4','c5')
+    card.classList.add('spinner')
     doSomething(card.innerHTML)
         .then(ok => {
             card.classList.add('c'+ok)
         })
         .catch(err => console.error('card '+card.innerHTML, 'err '+err))
+        .finally(()=> card.classList.remove('spinner'))
 }
 
 // promise

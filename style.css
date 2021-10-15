@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 5px;
-    margin-right: 5px;
+    margin: 0 5px 5px 0;
     cursor: pointer;
     font-size: .9rem;
 }
@@ -45,8 +45,6 @@
 /* mirroring spinner */
 
 .spinner {
-    background-color: #fff;
-    margin: 100px auto;
     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
     animation: sk-rotateplane 1.2s infinite ease-in-out;
   }
