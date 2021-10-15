@@ -1,0 +1,71 @@
+/* cards */
+
+.cards{
+    border: solid 1px silver;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 5px;
+}
+.card{
+    border: solid 1px gray;
+    display: flex;
+    min-width: 30px;
+    height: 25px;
+    background-color: #f1f1f1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.c0 {
+    background-color: magenta;
+    color: #fff
+}
+.c1 {
+    background-color: green;
+    color: #fff
+}
+.c2 {
+    background-color: orange;
+    color: #fff
+}
+.c3 {
+    background-color: red;
+    color: #fff
+}
+.c4 {
+    background-color: #bb00ff;
+    color: #fff
+}
+
+
+/* mirroring spinner */
+
+.spinner {
+    background-color: #fff;
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
